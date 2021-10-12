@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/FoodOrderApp/static/css/main.29619a57.chunk.css",
+    "main.js": "/FoodOrderApp/static/js/main.fb333408.chunk.js",
+    "main.js.map": "/FoodOrderApp/static/js/main.fb333408.chunk.js.map",
+    "runtime-main.js": "/FoodOrderApp/static/js/runtime-main.9dc73ab7.js",
+    "runtime-main.js.map": "/FoodOrderApp/static/js/runtime-main.9dc73ab7.js.map",
+    "static/js/2.2df7f198.chunk.js": "/FoodOrderApp/static/js/2.2df7f198.chunk.js",
+    "static/js/2.2df7f198.chunk.js.map": "/FoodOrderApp/static/js/2.2df7f198.chunk.js.map",
+    "index.html": "/FoodOrderApp/index.html",
+    "static/css/main.29619a57.chunk.css.map": "/FoodOrderApp/static/css/main.29619a57.chunk.css.map",
+    "static/js/2.2df7f198.chunk.js.LICENSE.txt": "/FoodOrderApp/static/js/2.2df7f198.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9dc73ab7.js",
+    "static/js/2.2df7f198.chunk.js",
+    "static/css/main.29619a57.chunk.css",
+    "static/js/main.fb333408.chunk.js"
+  ]
+}
