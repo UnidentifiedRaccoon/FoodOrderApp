@@ -1,6 +1,7 @@
 import React, { useReducer } from "react";
 
 const SET = "SET";
+const CLEAR = "CLEAR";
 
 const CartContext = React.createContext({
   items: [],
@@ -8,6 +9,7 @@ const CartContext = React.createContext({
   totalPrice: 0,
   maxAmountForEachItem: 10,
   setItem: (item) => {},
+  clearOrder: () => {},
 });
 
 const defaultCardState = {
@@ -45,6 +47,9 @@ const cartReducer = (state, action) => {
       totalPrice: Math.abs(totalPrice),
     };
   }
+  if (action.type === CLEAR) {
+    return defaultCardState;
+  }
   return state;
 };
 
@@ -54,7 +59,10 @@ export const CartContextProvider = (props) => {
     defaultCardState
   );
   const setItem = (item) => {
-    dispatchCardState({ type: "SET", item: item });
+    dispatchCardState({ type: SET, item: item });
+  };
+  const clearOrder = (item) => {
+    dispatchCardState({ type: CLEAR });
   };
 
   return (
@@ -65,6 +73,7 @@ export const CartContextProvider = (props) => {
         totalPrice: cardState.totalPrice,
         maxAmountForEachItem: 20,
         setItem: setItem,
+        clearOrder: clearOrder,
       }}
     >
       {props.children}

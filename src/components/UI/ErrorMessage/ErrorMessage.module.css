@@ -1,0 +1,30 @@
+
+.error {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error h3 {
+    color: #f79191;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    animation: error 1s ease-in-out infinite alternate;
+    margin-bottom: 0.3rem;
+}
+
+
+.error span {
+    color: #ff0000;
+    margin-bottom: 0.5rem;
+}
+
+@keyframes error {
+    0% {
+        color: #f79191;
+    }
+    100% {
+        color: #ff0000;
+    }
+}

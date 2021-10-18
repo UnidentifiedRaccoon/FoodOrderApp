@@ -1,0 +1,23 @@
+.form {
+    margin: 1rem 0;
+    height: 15rem;
+    overflow: auto;
+}
+
+.checkout-control {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.checkout-control input {
+    width: 20rem;
+    max-width: 100%;
+}
+
+.actions {
+    text-align: right;
+
+}
+
+

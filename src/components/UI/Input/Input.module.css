@@ -1,19 +1,35 @@
-.input {
+.control {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin-bottom: 0.5rem;
 }
 
-.input label {
-    font-weight: bold;
+.control label {
+    display: block;
+    margin-bottom: 0.25rem;
     margin-right: 1rem;
+    font-weight: bold;
 }
 
-.input input {
+.control input {
     width: 3rem;
     border-radius: 5px;
     border: 1px solid #ccc;
     font: inherit;
     padding-left: 0.5rem;
+}
+
+.invalid label {
+    color: #ca3e51;
+}
+
+.invalid input {
+    border-color: #aa0b20;
+    background-color: #ffeff1;
+}
+
+
+.invalid p {
+    color: #ca3e51;
 }
